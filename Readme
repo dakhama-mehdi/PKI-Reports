@@ -1,0 +1,35 @@
+# PKI-Stats
+
+[![PowerShell Gallery](https://img.shields.io/powershellgallery/v/PKI.Stats?color=blue&style=flat-square)](https://www.powershellgallery.com/packages/PKI.Stats) 
+[![License](https://img.shields.io/github/license/youruser/PKI-Stats?style=flat-square)](LICENSE) 
+[![Platform](https://img.shields.io/badge/platform-Windows-lightgrey?style=flat-square)](https://microsoft.com/pki)
+
+🚧 **Work in Progress** 🚧  
+PKI-Stats is a lightweight PowerShell module designed to provide **monitoring and reporting** for Microsoft Certification Authorities (CAs).  
+It focuses purely on **statistics and dashboards** (delivered, expired, soon-to-expire certificates, top templates, etc.) — **no security audit** is included.
+
+---
+
+## ✨ Features
+
+- Global statistics:
+  - Total issued, active, expired, revoked
+  - Certificates expiring soon (7 / 30 / 90 days)
+- Top 5 statistics:
+  - Most frequently used certificate templates
+  - Recently issued certificates
+- Export options:
+  - HTML dashboard (via [PSWriteHTML](https://github.com/EvotecIT/PSWriteHTML))
+  - JSON / CSV raw data
+- Multiple CA servers support (enumerated from AD)
+
+---
+
+## 📦 Installation (WIP)
+
+Clone the repository and import the module locally:
+
+```powershell
+git clone https://github.com/youruser/PKI-Stats.git
+cd PKI-Stats/src
+Import-Module ./PKI.Stats.psd1 -Force
