@@ -5,7 +5,7 @@ PKI-Stats is a lightweight PowerShell module designed to provide **monitoring an
 It focuses purely on **statistics and dashboards** (delivered, expired, soon-to-expire certificates, top templates, etc.) — **no security audit** is included.
 
 ---
-
+Examples : https://dakhama-mehdi.github.io/PKI-Stats/Examples/pkiviz.html
 ## ✨ Features
 
 - Global statistics:
@@ -26,6 +26,6 @@ It focuses purely on **statistics and dashboards** (delivered, expired, soon-to-
 Clone the repository and import the module locally:
 
 ```powershell
-git clone https://github.com/youruser/PKI-Stats.git
+git clone 
 cd PKI-Stats/src
 Import-Module ./PKI.Stats.psd1 -Force
