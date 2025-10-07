@@ -47,7 +47,7 @@ Invoke-Pkireports
 
 | Parameter      | Description |
 |----------------|-------------|
-| `SavePath`    | Directory where all reports will be exported (HTML, CSV, JSON). Useful for monitoring or serving via web server.<br>**Example**: `-SavePath C:\Temp\PKIReports` |
+| `SavePath`    | Directory where all reports will be exported (HTML, CSV, JSON). Useful for monitoring or serving via web server. **Example**: `-SavePath C:\Temp\PKIReports` |
 | `ComputerName`| One or more specific CA servers to target. If not specified, all CAs in AD will be queried.<br>**Example**: `-ComputerName CA-1.info.lab,CA-2.info.lab` |
 | `MaxSearch`   | Limit the number of certificates processed per CA (useful for testing or performance).<br>**Example**: `-MaxSearch 1000` |
 | `ExportCSV`   | Export only the soon-to-expire certificates to a standalone CSV file (used with `-MaxDaysLeft`).<br>**Example**: `-ExportCSV C:\Temp\export.csv -MaxDaysLeft 7` |
