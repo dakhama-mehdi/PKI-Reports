@@ -6,6 +6,9 @@ https://raw.githubusercontent.com/dakhama-mehdi/PKI-Reports/refs/heads/main/Logo
 
 https://dakhama-mehdi.github.io/PKI-Reports/logo/Logo_PKI.png
 
+<img width="400" height="150" alt="Logo PKIReports" src="https://raw.githubusercontent.com/dakhama-mehdi/PKI-Reports/main/logo/Logo_PKI.png" />
+
+
 🚧 **Work in Progress** 🚧  
 PKI-Stats is a lightweight PowerShell module designed to provide **monitoring and reporting** for Microsoft Certification Authorities (CAs).  
 It focuses purely on **statistics and dashboards** (delivered, expired, soon-to-expire certificates, top templates, etc.) — **no security audit** is included.
