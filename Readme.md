@@ -1,9 +1,13 @@
-<div align="left">
-  <h1 style="display: flex; align-items: center; justify-content: space-between;">
-    <img src="https://raw.githubusercontent.com/dakhama-mehdi/PKI-Reports/main/Logo/Logo_PKI.png" alt="PKIReports" width="250" height="150" style="margin-left: 20px;" />
-    PKIReports : One command for all you want``
-  </h1>
-</div>
+<table style="width:100%;">
+<tr>
+<td style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/dakhama-mehdi/PKI-Reports/main/Logo/Logo_PKI.png" alt="PKIReports" width="250" height="150">
+</td>
+<td align="right" style="vertical-align: middle;">
+<h1>PKIReports : One command for all you want</h1>
+</td>
+</tr>
+</table>
 
 
 🚧 **Work in Progress** 🚧  
