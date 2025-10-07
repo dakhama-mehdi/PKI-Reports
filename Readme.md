@@ -9,7 +9,7 @@
 </tr>
 </table>
 
-> **PKIReports** is a modern PowerShell module designed to **generate a complete and visual inventory** of your AD CS servers, simplifying the management and understanding of your PKI infrastructure.  
+> PKIReports is a modern PowerShell module designed to build a complete and visual inventory of your AD CS servers, simplifying the management and understanding of your PKI infrastructure.  
 >  
 > With just **ONE COMMAND**, it generates a **comprehensive report in minutes** analyzing issued and revoked certificates, identifying trends, and providing a clear view of PKI activities  ideal for **monitoring, project tracking, administration, and capacity planning**.
 
