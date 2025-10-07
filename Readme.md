@@ -13,7 +13,7 @@
 >  
 > Built to address the growing need for **clear visibility and automation in PKI environments**, PKIReports helps administrators, auditors, and engineers gain instant insights into their certification authorities.  
 >  
-> With just **ONE COMMAND**, it generates a **comprehensive report in minutes** — analyzing issued and revoked certificates, identifying trends, and providing a clear view of PKI activities — ideal for **monitoring, project tracking, administration, and capacity planning**.
+> With just **ONE COMMAND**, it generates a **comprehensive report in minutes** analyzing issued and revoked certificates, identifying trends, and providing a clear view of PKI activities  ideal for **monitoring, project tracking, administration, and capacity planning**.
 
 
 ---
@@ -21,7 +21,7 @@ Examples : https://dakhama-mehdi.github.io/PKI-Reports/Examples/Pkireports.html
 
 ## ✨ Features
 
-| Category | Details |
+| | |
 |-----------|----------|
 | **Global statistics** | Total issued, active, expired, revoked · Certificates expiring soon (7 / 30 / 90 days) · Certificate templates overview · Signature and key algorithms used |
 | **Certificate & CRL health** | Validity and next update date of each CA's CRL · CRL publication point reachability · Detection of expired or missing CRL files · CA availability and service status |
