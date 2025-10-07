@@ -18,26 +18,75 @@
 
 ---
 Examples : https://dakhama-mehdi.github.io/PKI-Reports/Examples/Pkireports.html
+
 ## ✨ Features
 
-- Global statistics:
-  - Total issued, active, expired, revoked
-  - Certificates expiring soon (7 / 30 / 90 days)
-- Top 5 statistics:
-  - Most frequently used certificate templates
-  - Recently issued certificates
-- Export options:
-  - HTML dashboard (via [PSWriteHTML](https://github.com/EvotecIT/PSWriteHTML))
-  - JSON / CSV raw data
-- Multiple CA servers support (enumerated from AD)
+| Category | Details |
+|-----------|----------|
+| **Global statistics** | Total issued, active, expired, revoked · Certificates expiring soon (7 / 30 / 90 days) · Certificate templates overview · Signature and key algorithms used |
+| **Certificate & CRL health** | Validity and next update date of each CA's CRL · CRL publication point reachability · Detection of expired or missing CRL files · CA availability and service status |
+| **Top statistics** | Most frequently used certificate templates · Most active requesters (users, computers, services) · Top revoked certificates (by reason or template) · Top failed requests (by error or status code) |
+| **Issued & Revoked insights** | Daily issued / revoked trends · Issuance and revocation reasons · Temporal view (last 15 days) · Process name and requester correlation |
+| **Multiple CA servers support** | Automatic enumeration from Active Directory · Parallel data collection · Consolidated metrics |
+
+## 🚀 Installation
+
+```powershell
+Install-Module PKIReports -Scope CurrentUser -Force
+````
+## How tu use 
+
+```powershell
+Invoke-Pkireports
+````
+
+## 🧱 Prerequisites
+
+- A machine joined to the domain (Windows Server or Windows 10/11)
+- An account with at least **read permissions** on the Certification Authority server(s)
+
+## 🛠️ Parameters
+
+| Parameter      | Description |
+|----------------|-------------|
+| `-SavePath`    | Directory where all reports will be exported (HTML, CSV, JSON). Useful for monitoring or serving via web server.<br>**Example**: `-SavePath C:\Temp\PKIReports` |
+| `-ComputerName`| One or more specific CA servers to target. If not specified, all CAs in AD will be queried.<br>**Example**: `-ComputerName CA-1.info.lab,CA-2.info.lab` |
+| `-MaxSearch`   | Limit the number of certificates processed per CA (useful for testing or performance).<br>**Example**: `-MaxSearch 1000` |
+| `-ExportCSV`   | Export only the soon-to-expire certificates to a standalone CSV file (used with `-MaxDaysLeft`).<br>**Example**: `-ExportCSV C:\Temp\export.csv -MaxDaysLeft 7` |
+| `-Silent`      | Do not open the generated HTML report in the browser. Useful for Task Scheduler or automated environments. |
+| `-NoHtml`      | Skip HTML dashboard generation (combine with `-ExportCSV` for headless use). |
+
+## 🤝 Contact & Contribution
+
+Feel free to contact us for any **PKI-related project support**, including deployment of the solution on a web server with daily reporting.
+
+Your **donations, suggestions, or contributions** help us improve PKIReports and bring new features to the community.
+
+📧 Contact: [pkireports@outlook.fr](mailto:pkireports@outlook.fr)
 
 ---
 
-## 📦 Installation (WIP)
+## 📦 Dependencies
 
-Clone the repository and import the module locally:
+This module relies on the following PowerShell libraries:
 
-```powershell
-git clone 
-cd PKI-Stats/src
-Import-Module ./PKI.Stats.psd1 -Force
+- [`PSPKI`](https://github.com/PKISolutions/PSPKI) – for interacting with Microsoft Certification Authorities
+- [`PSWriteHTML`](https://github.com/EvotecIT/PSWriteHTML) – for generating dynamic HTML dashboards and tables
+
+---
+
+## ⚖️ License
+
+> ❗ **Strictly non-commercial license**
+
+- Free to use for **end-users only**  
+- **Commercial usage, resale, or deployment by third-party providers** is strictly prohibited without permission  
+- For professional use or integration in a commercial environment, please contact us
+
+---
+
+## 🙏 Acknowledgements
+
+Special thanks to contributor: **Hassene Saadi**
+
+
