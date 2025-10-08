@@ -13,7 +13,7 @@
 >  
 > With just **ONE COMMAND**, you get a clear and **visual dashboard** showing issued and revoked certificates, key trends, and essential metrics for administration, tracking, and capacity planning..
 ---
-Examples : https://dakhama-mehdi.github.io/PKI-Reports/Examples/Pkireports.html
+Examples : [View Online Example](https://dakhama-mehdi.github.io/PKI-Reports/Examples/Pkireports.html)
 
 ## ✨ Features
 
