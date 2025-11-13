@@ -81,8 +81,3 @@ This module relies on the following PowerShell libraries:
 
 ---
 
-## 🙏 Acknowledgements
-
-Special thanks to contributor: **Hassene Saadi**
-
-
